@@ -136,16 +136,6 @@ main{
     background-color: rgb(153, 193, 194);
 }
 
-/* .foot-card{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px;
-    height: 8vh;
-    padding: 15px;
-    background-color: rgb(153, 193, 194);
-} */
-
 .foot-card h4{
     margin-right: 110px;
     width: 15%;
