@@ -8,10 +8,19 @@
 body{
     min-height: 100vh;
     overflow: hidden;
-
 }
-
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background: bisque;
+}
 .container{
+    display: flex;
+}
+.contan{
+    flex: 0.4;
     position: relative;
     width: 100%;
 }
@@ -33,7 +42,6 @@ body{
     position: relative;
     width: 100%;
     list-style: none;
-    
 }
 .navigation ul li:hover{
     background: white;
@@ -73,4 +81,156 @@ body{
     line-height: 60px;
     text-align: start;
     white-space: nowrap;
+}
+
+/* Addcard */
+.AddCard{
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    flex: 1.5;
+}
+.itemsearch{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 98%;
+    height: 10vh;
+}
+.itemsearch > p{
+    color: orange;
+}
+.itemsearch > input{
+    width: 88%;
+    height: 40px;
+    border:  1px solid orange;
+    padding-left: 15px;
+    border-radius: 15px;
+}
+.search{
+    padding: 13px;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#imgCateg{
+    display: flex;
+    margin-left: 15px;
+}
+
+#img-Categry{
+    display: flex;
+    margin-left: 15px;
+}
+
+/* card */
+.fooder-none{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    height: 8vh;
+    padding: 15px;
+    background-color: rgb(153, 193, 194);
+}
+
+/* .foot-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    height: 8vh;
+    padding: 15px;
+    background-color: rgb(153, 193, 194);
+} */
+
+.foot-card h4{
+    margin-right: 110px;
+    width: 15%;
+}
+.foot-card h5 b{
+    color: rgb(209, 0, 0);
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    height: 8vh;
+    padding: 15px;
+    border-radius: 5px;
+    background: rgb(160, 170, 199);
+}
+.card > img{
+    width: 4%;
+    height: 25px;
+}
+.card > input{
+    height: 20px;
+    width: 15%;
+}
+.card > b{
+    color: rgb(179, 0, 0);
+}
+
+/* EditCard */
+.inputCard{
+    padding-top: 25px;
+    height: auto;
+    padding-left: 20px;
+    flex: 1;
+
+}
+
+.inputCard h2{
+    font-size: 2rem;
+    color: blue;
+    padding: 20px 0px 0px 150px
+}
+.inputCard .text-input{
+    width: 90%;
+    height: 58vh;
+    border-radius: 5px;
+    background: rgb(153, 193, 194);
+}
+.inputCard p{
+    padding: 10px 0px 10px 20px;
+}
+.inputCard input{
+    height: 6vh;
+    padding-left: 20px;
+    margin-left: 20px;
+    width: 85%;
+    border: none;
+}
+
+.text-input button{
+    margin: 30px 0px 20px 130px;
+    width: 40%;
+    height: 7vh;
+    border: none;
+    color: white;
+    background: blue;
+    border-radius: 5px;
+} 
+
+
+/* ========table====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
 }
