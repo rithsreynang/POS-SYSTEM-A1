@@ -208,23 +208,6 @@ function addCategry(){
 
 
 // =======Search ======//
-let search_Categry = document.getElementById('search-Categry');
-search_Categry.addEventListener('input', searchName);
 
-let listName = document.querySelector('tbody');
-function searchName(){
-    for (let user of listName.children){
-
-        // console.log(user.firstElementChild.textContent.toLowerCase())
-        if (user.firstElementChild.textContent.toLowerCase()){
-            // user.style.display = '';
-            console.log('hello')
-        }
-        // else{
-        //     user.style.display = 'none';
-        // };
-    };
-
-};
 
 
