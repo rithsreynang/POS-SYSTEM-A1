@@ -1,64 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-        <!-- =============Navigation========== -->
-        <div class="container">
-            <div class="navigation">
-                <ul>
-                    <li>
-                        <a href="">
-                            <span class="icon">
-                                <ion-icon name="menu"></ion-icon>
-                            </span>
-                            <h3 class="title">POS System</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/dashboard.html">
-                            <span class="icon">
-                                <ion-icon name="grid-outline"></ion-icon>
-                            </span>
-                            <span class="title">Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Pages/product.html">
-                            <span class="icon">
-                                <ion-icon name="cart-outline"></ion-icon>
-                            </span>
-                            <span class="title">Products</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Pages/categories.html">
-                            <span class="icon">
-                                <ion-icon name="apps-outline"></ion-icon>
-                            </span>
-                            <span class="title">Categorie</span>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="/Pages/order.html">
-                            <span class="icon">
-                                <ion-icon name="cart-outline"></ion-icon>
-                            </span>
-                            <span class="title">Order</span>
-                        </a>
-                    </li>
-                </ul>
+    <!-- =============Navigation========== -->
+    <!-- <div class="container">
+        <nav class="logo">
+            <h1>POS SYSTEM</h1>
+        </nav> -->
+    <main>
+        <div class="left">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon">
+                            <ion-icon name="menu"></ion-icon>
+                        </span>
+                        <h3 class="title">POS System</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/dashboard.html">
+                        <span class="icon">
+                            <ion-icon name="grid-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Pages/product.html">
+                        <span class="icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Pages/categories.html">
+                        <span class="icon">
+                            <ion-icon name="apps-outline"></ion-icon>
+                        </span>
+                        <span class="title">Categorie</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Pages/order.html">
+                        <span class="icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Order</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="contents">
+                <div class="stor">
+                    <p>In stock</p>
+                    <h4>100</h4>
+                </div>
+                <div class="stor">
+                    <p>Category</p>
+                    <h4>100</h4>
+                </div>
+                <div class="stor">
+                    <p>Sold Out</p>
+                    <h4>100</h>
+                </div>
+                <div class="stor">
+                    <p>Income</p>
+                    <h4>100</h4>
+                </div>
+            </div>
+            <div class="tables">
+                <h2>Top 4 sold product</h2>
+                <div class="table-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>Amount</th>
+                                <th>Sell Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                </div>
             </div>
         </div>
-    
+    </main>
+
+    </div>
+
 </body>
 <script src="/JS/dashboard.js"></script>
 <!-- ====icon icons=== -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </html>

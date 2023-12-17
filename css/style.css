@@ -15,34 +15,41 @@ body{
     position: relative;
     width: 100%;
 }
-.navigation{
-    position: fixed;
-    width: 200px;
-    height: 100%;
+/* nav{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+} */
+
+.left{
     background: orange;
+    width: 15%;
+    height: 100%;
+    position: fixed;
     transition: 0.5s;
     overflow: hidden;
+
 }
-.navigation ul{
+.left ul{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-.navigation ul li{
+.left ul li{
     position: relative;
     width: 100%;
     list-style: none;
     
 }
-.navigation ul li:hover{
+.left ul li:hover{
     background: white;
 }
-.navigation ul li:nth-child(1){
+.left ul li:nth-child(1){
     margin-bottom: 40px;
     pointer-events: none;
 }
-.navigation ul li a{
+.left ul li a{
     position: relative;
     display: block;
     width: 100%;
@@ -50,11 +57,11 @@ body{
     color: white;
     display: flex;
 }
-.navigation ul li:hover a{
+.left ul li:hover a{
     color:orange;
     
 }
-.navigation ul li .icon{
+.left ul li .icon{
     position: relative;
     display: block;
     min-width: 60px;
@@ -62,10 +69,10 @@ body{
     line-height: 60px;
     text-align: center;
 }
-.navigation ul li .icon ion-icon{
+.left ul li .icon ion-icon{
     font-size: 1.75rem;
 }
-.navigation ul li a .title{
+.left ul li a .title{
     position: relative;
     display: block;
     padding: 0 10px;
@@ -74,3 +81,50 @@ body{
     text-align: start;
     white-space: nowrap;
 }
+.right{
+    width: 85%;
+    height: 10vh;
+    /* background-color: antiquewhite; */
+    margin-left: 15%;
+}
+.contents{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+
+}
+.stor>h4{
+    color: rgb(24, 147, 189);
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid rgb(147, 145, 145) ;
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.tables{
+    /* background-color: violet; */
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 70px;
+      
+}
+table{
+    width: 100%;
+}
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 10px;
+}
+   
+
+
+
+
+  
+
