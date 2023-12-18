@@ -6,10 +6,6 @@ let array = [];
 function save(){
     localStorage.setItem("array", JSON.stringify(array));
 };
-function load(){
-    array = JSON.parse(localStorage.getItem("array"));
-};  
-load()
 button.addEventListener('click', function(e){
     e.preventDefault()
     let textName = document.getElementById('textName');
@@ -155,6 +151,7 @@ function addProduce(){
     let fooder_bloock = document.querySelector('.fooder-none');
     fooder_bloock.style.display = ''; 
 };
+
 
 
 // ===================add table thead tr td============//
