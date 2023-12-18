@@ -10,7 +10,6 @@ function load(){
     array = JSON.parse(localStorage.getItem("array"));
 };  
 load()
-
 button.addEventListener('click', function(e){
     e.preventDefault()
     let textName = document.getElementById('textName');
@@ -87,7 +86,6 @@ button.addEventListener('click', function(e){
         alert('You have not filled in correctly');
     };
 });
-
 
 
 // =====================add Categry==================//
