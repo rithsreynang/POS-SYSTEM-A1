@@ -13,18 +13,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Add Produt</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="../JS/product.js" defer></script>
+
 </head>
 
 <body>
     <!-- =============Navigation========== -->
-    <main>
+    <!-- <main>
         <h1>main</h1>
-    </main>
+    </main> -->
     <div class="container">
         <div class="contan">
-                    <div class="navigation">
+                <div class="navigation">
             <ul>
                 <li>
                     <a href="">
@@ -71,46 +73,68 @@
         </div>
         </div>
         <div class="AddCard">
-            <div class="itemsearch">
-                <p>Search</p>
-                <input type="search" id="gsearch" name="gsearch">
-            </div>
-            <h1>Total Product</h1>
+            <div class="fooderAdd">
+                <div class="itemsearch" id="item-search" style="display: none;">
+                    <input id="search-Categry" type="text" name="search" placeholder="Search Categry"> 
+                     <button class="search">search</button>
+                </div>
 
-            <div class="card" id="card1">
-                <span><h3>Banana</h1></span>
-                <b>10$</b>
-                <input type="number" id="ip-number">
-                <img src="../Images/delete.jpg" alt="">
-            </div>
-
-            <div class="card" id="card2">
-                <span><h3>Mago</h1></span>
-                <b>2$</b>
-                <input type="number" id="ip-number">
-                <img src="../Images/delete.jpg" alt="">
-            </div>
-
-            <div class="card" id="card3">
-                <span><h3>Lenovo</h1></span>
-                <b>5$</b>
-                <input type="number" id="ip-number">
-                <img src="../Images/delete.jpg" alt="">
+                <div class="itemsearch" id="im">
+                    <input id="searchbar" type="text" name="search" placeholder="Search Product.."> 
+                     <button class="search">search</button>
+                </div>
+                <h1 style="display: none;" id="h1">Totle Categry</h1>
+                <img src="../Images/imgCategry.png" alt="" id="img-Categry" width="30px" style="display: none;">
+                <table style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Category ID</th>
+                            <th>Catagory Nmae</th>
+                            <th>Taste</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                </table>
+                <h1 id="Total">Total Product</h1>
+                <img src="../Images/imgCategry.png" alt="" id="imgCateg" width="30px">
+                <div class="foot-card" id="card">
+                    <div class="fooder-none">
+                        <span><h5>NAME PRODUCE</h5></span>
+                        <h4>PEICE</h4>
+                        <h4>NUMBER PRODUCE</h4>
+                        <h5><b>DELETE</b></h5>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="inputCard">
-            <h2>Add Product</h2>
-            <div class="text-input">
-                <p>Name :</p>
-                <input type="text" id="">
-                <p>Price :</p>
-                <input type="text" id="">
-                <button>Add Product</button>
+            <div class="fooderCard">
+                <div class="text-input">
+                    <h2>Add Product</h2>
+                    <p>Name :</p>
+                    <input type="text" id="textName" placeholder="Name of product...">
+                    <p>Number :</p>
+                    <input type="number" id="input-Number" placeholder="stock of peoduct...">
+                    <p>Price :</p>
+                    <input type="text" id="textPrice" placeholder="price of product...">
+                    <button id="Add-Prooduct">Add Product</button>
+                </div>
+            </div>
+            <div class="inputCard" style="display: none;" id="card-categry">
+                <div class="text-input">
+                    <h2>Add Categry</h2>
+                    <p>Categry ID :</p>
+                    <input type="text" id="textID" placeholder="Name of categry ID...">
+                    <p>CategoryName :</p>
+                    <input type="text" id="categoryName" placeholder="Name of category...">
+                    <p>Categry Action :</p>
+                    <input type="text" id="action" placeholder="price of Action...">
+                    <button id="Add-Categry">Add Categry</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
-<script src="/JS/dashboard.js"></script>
 <!-- ====icon icons=== -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
