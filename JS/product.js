@@ -153,6 +153,7 @@ function addProduce(){
 };
 
 
+
 // ===================add table thead tr td============//
 let tr_thead = document.querySelector('tr');
 let table = document.querySelector('table');
