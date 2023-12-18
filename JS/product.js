@@ -6,10 +6,6 @@ let array = [];
 function save(){
     localStorage.setItem("array", JSON.stringify(array));
 };
-function load(){
-    array = JSON.parse(localStorage.getItem("array"));
-};  
-load()
 button.addEventListener('click', function(e){
     e.preventDefault()
     let textName = document.getElementById('textName');
