@@ -5,104 +5,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --blue: #2a2185;
-    --white:#fff;
-    --gray : #f5f5f5;
-    --black: #222;
-    --black2: #999;
-}
 body{
-    min-height: 100vh;/* ========Globals============= */
-    *{
-        font-family: "Ubuntu",sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        min-height: 100vh;
-        overflow: hidden;
-    
-    }
-    
-    .container{
-        position: relative;
-        width: 100%;
-    }
-    .navigation{
-        position: fixed;
-        width: 200px;
-        height: 100%;
-        background: orange;
-        transition: 0.5s;
-        overflow: hidden;
-    }
-    .navigation ul{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-    .navigation ul li{
-        position: relative;
-        width: 100%;
-        list-style: none;
-        
-    }
-    .navigation ul li:hover{
-        background: white;
-    }
-    .navigation ul li:nth-child(1){
-        margin-bottom: 40px;
-        pointer-events: none;
-    }
-    .navigation ul li a{
-        position: relative;
-        display: block;
-        width: 100%;
-        text-decoration: none;
-        color: white;
-        display: flex;
-    }
-    .navigation ul li:hover a{
-        color:orange;
-        
-    }
-    .navigation ul li .icon{
-        position: relative;
-        display: block;
-        min-width: 60px;
-        height: 60px;
-        line-height: 60px;
-        text-align: center;
-    }
-    .navigation ul li .icon ion-icon{
-        font-size: 1.75rem;
-    }
-    .navigation ul li a .title{
-        position: relative;
-        display: block;
-        padding: 0 10px;
-        height: 60px;
-        line-height: 60px;
-        text-align: start;
-        white-space: nowrap;
-    }
+    min-height: 100vh;
     overflow: hidden;
-
+    border-top: 2px solid orange;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background: rgb(165, 136, 101);
+}
+.container{
+    display: flex;
+    
+    
 }
 
-.container{
+.contan{
+    flex: 0.4;
     position: relative;
     width: 100%;
 }
 .navigation{
     position: fixed;
     width: 200px;
-    height: 100%;
-    background: var(--blue);
-    border-left:10px solid var(--blue);
+    /* height: 100%; */
+    background: orange;
     transition: 0.5s;
     overflow: hidden;
 }
@@ -124,17 +54,21 @@ body{
 .navigation ul li:nth-child(1){
     margin-bottom: 40px;
     pointer-events: none;
+    
+}
+.navigation ul li h3{
+    margin: -8px;
 }
 .navigation ul li a{
     position: relative;
     display: block;
     width: 100%;
     text-decoration: none;
-    color: var(--white);
+    color: white;
     display: flex;
 }
 .navigation ul li:hover a{
-    color: var(--blue);
+    color:orange;
     
 }
 .navigation ul li .icon{
@@ -157,3 +91,160 @@ body{
     text-align: start;
     white-space: nowrap;
 }
+/* =======================display_product========================== */
+.main{
+    flex: 4;
+    margin-left: 13%;
+    display: flex;
+  
+}
+.main-left{
+    flex: 2;
+    /* height: 100vh; */
+}
+.main-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid orange;
+}
+form{
+    width: 60%;
+    display: flex;
+    margin-right: 20px;
+    gap: 15px;
+}
+#search_input{
+
+    padding:10px;
+    width: 80%;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+#submit{
+    padding: 10px;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+
+}
+.category{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+#fruits,#cakes,#drinks,#cosmetics{
+    padding: 10px;
+    border: 1px solid orange;
+    font-weight: bold;
+    background: orange;
+    width: 15%;
+    border-radius: 10px;
+    color: white;
+}
+#fruits:hover,#cakes:hover,#drinks:hover,#cosmetics:hover{
+    color: #000;
+    background: white;
+}
+
+#group-card{
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-top: -10px;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.card{
+    width: 19%;
+    padding: 10px;
+    background: white;
+    /* text-align: center; */
+    margin:10px;
+    height: 40%;
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin-left: 35px;
+  
+}
+
+img{
+    width: 175px;
+    margin-left: -8px;
+    border-radius: 5px;
+    margin-top: -8px;
+}
+h3{
+    margin-top: 5px;
+}
+#submits{
+    width: 90%;
+    padding: 5px;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+
+/* =========================main_right============================= */
+.main-right{
+    flex: 0.7;
+    border: 1px solid orange;
+    border-top: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+}
+.main_total{
+    margin-top: 145%;
+}
+.total{
+    display:flex ;
+       
+
+}
+
+/* ===========================Add_pruduct_Tocart============================= */
+#carts{
+    display: flex;
+    background: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 13px;
+    padding-left: 20px;
+    margin-top: 15px;
+    /* color: white; */
+
+}
+#carts img{
+    width: 80px;
+    height: 76px;
+    margin-top: 1px;
+    margin-left: -20px;
+    border-radius: 10px;
+
+}
+.price_product{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.group-icon{
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+
+
