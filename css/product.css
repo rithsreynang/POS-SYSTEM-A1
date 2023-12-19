@@ -175,14 +175,14 @@ main{
 
 .inputCard h2{
     font-size: 2rem;
-    color: blue;
+    color: white;
     padding: 20px 0px 0px 150px
 }
 .inputCard .text-input{
     width: 90%;
     height: 58vh;
     border-radius: 5px;
-    background: rgb(153, 193, 194);
+    background: rgba(255, 166, 0, 0.863);
 }
 .inputCard p{
     padding: 10px 0px 10px 20px;
@@ -200,8 +200,8 @@ main{
     width: 40%;
     height: 7vh;
     border: none;
-    color: white;
-    background: blue;
+    color: wheat;
+    background: rgb(116, 73, 30);
     border-radius: 5px;
 } 
 

@@ -75,7 +75,7 @@
         <div class="AddCard">
             <div class="fooderAdd">
                 <div class="itemsearch" id="item-search" style="display: none;">
-                    <input id="search-Categry" type="text" name="search" placeholder="Search Categry"> 
+                    <input id="search-Categry" type="text" name="search" placeholder="Search Categry..."> 
                      <button class="search">search</button>
                 </div>
 
@@ -85,12 +85,12 @@
                 </div>
                 <h1 style="display: none;" id="h1">Totle Categry</h1>
                 <img src="../Images/imgCategry.png" alt="" id="img-Categry" width="30px" style="display: none;">
-                <table style="display: none;">
+                <table style="display: none;" id="tableProduct">
                     <thead>
                         <tr>
                             <th>Category ID</th>
                             <th>Catagory Nmae</th>
-                            <th>Taste</th>
+                            <th>Sweet</th>
                             <th>Delete</th>
                         </tr>
                     </thead>
@@ -98,12 +98,18 @@
                 <h1 id="Total">Total Product</h1>
                 <img src="../Images/imgCategry.png" alt="" id="imgCateg" width="30px">
                 <div class="foot-card" id="card">
-                    <div class="fooder-none">
-                        <span><h5>NAME PRODUCE</h5></span>
-                        <h4>PEICE</h4>
-                        <h4>NUMBER PRODUCE</h4>
-                        <h5><b>DELETE</b></h5>
-                    </div>
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>NAME PRODUCE</th>
+                                <th>PEICE</th>
+                                <th>DOWN</th>
+                                <th>NUMBER PRODUCE</th>
+                                <th>INCREASE</th>
+                                <th>DELETE</th>
+                            </tr>
+                        </thead>
+                    </table>
                 </div>
             </div>
         </div>
@@ -123,14 +129,13 @@
             <div class="inputCard" style="display: none;" id="card-categry">
                 <div class="text-input">
                     <h2>Add Categry</h2>
-                    <p>Categry ID :</p>
-                    <input type="text" id="textID" placeholder="Name of categry ID...">
                     <p>CategoryName :</p>
                     <input type="text" id="categoryName" placeholder="Name of category...">
                     <p>Categry Action :</p>
-                    <input type="text" id="action" placeholder="price of Action...">
+                    <input type="text" id="action" placeholder="price of Sweet...">
                     <button id="Add-Categry">Add Categry</button>
                 </div>
+                
             </div>
         </div>
     </div>
