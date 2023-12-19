@@ -162,7 +162,7 @@ function categry(){
     im.style.display = '';
 };
 
-//============deta===========//
+//============deta Categoage===========//
 let deta_Category = [];
 function save() {
     localStorage.setItem('deta_Category', JSON.stringify(deta_Category));

@@ -1,26 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorie</title>
+    <title>Products</title>
     <link rel="stylesheet" href="../css/categories.css">
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <script src="../JS/categories.js" defer></script>
 </head>
 
 <body>
     <!-- =============Navigation========== -->
     <div class="container">
-        <div class="navigation">
+        <div class="contan">
+                <div class="navigation">
             <ul>
                 <li>
                     <a href="">
@@ -65,9 +58,41 @@
                 </li>
             </ul>
         </div>
+        </div>
+        <div class="AddCard">
+            <div class="fooderAdd">
+                <div class="itemsearch" id="item-search">
+                    <input id="search-Categry" type="text" name="search" placeholder="Search Categry..."> 
+                     <button class="search">search</button>
+                </div>
+                <h1 id="h1">Totle Categry</h1>
+                <table id="tableProduct">
+                    <thead>
+                        <tr>
+                            <th>Category ID</th>
+                            <th>Catagory Nmae</th>
+                            <th>Sweet</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="inputCard">
+            <div class="inputCard" id="card-categry">
+                <div class="text-input">
+                    <h2>Add Categry</h2>
+                    <p>CategoryName :</p>
+                    <input type="text" id="categoryName" placeholder="Name of category...">
+                    <p>Categry Action :</p>
+                    <input type="text" id="action" placeholder="price of Sweet...">
+                    <button id="Add-Categry">Add Categry</button>
+                </div>
+                
+            </div>
+        </div>
     </div>
 </body>
-<script src="/JS/dashboard.js"></script>
 <!-- ====icon icons=== -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
