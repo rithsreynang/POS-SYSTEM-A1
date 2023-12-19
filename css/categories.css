@@ -158,6 +158,9 @@ main{
     border: none;
 }
 
+.text-input button:hover{
+    background-color: #4CAF50;
+}
 .text-input button{
     margin: 30px 0px 20px 130px;
     width: 40%;

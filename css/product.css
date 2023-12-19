@@ -179,6 +179,24 @@ main{
     color: white;
     padding: 20px 0px 0px 150px
 }
+#Add-Categry{
+    margin: 40px 0px 0px 110px;
+    width: 50%;
+    height: 6vh;
+    border: none;
+    border-radius: 5px;
+    color: wheat;
+    background: rgb(116, 73, 30);
+    /* padding: 15px; */
+}
+
+.inputCard .text-inputs{
+    width: 90%;
+    height: 50vh;
+    border-radius: 5px;
+    background: rgba(255, 166, 0, 0.863);
+
+}
 .inputCard .text-input{
     width: 90%;
     height: 58vh;
@@ -195,6 +213,10 @@ main{
     width: 85%;
     border: none;
 }
+#Add-Categry:hover,
+.text-input button:hover{
+    background-color: #4CAF50;
+}
 
 .text-input button{
     margin: 30px 0px 20px 130px;
@@ -205,7 +227,22 @@ main{
     background: rgb(116, 73, 30);
     border-radius: 5px;
 } 
+.deplay:hover,
+.deplay-category:hover{
+    color: black;
+    background-color: rgb(0, 214, 214);
+}
 
+.deplay,
+.deplay-category{
+    /* width: 15%; */
+    padding: 10px;
+    margin: 25px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
 
 /* ========table====== */
 table {
