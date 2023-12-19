@@ -93,7 +93,6 @@ function delete_Product(e){
 
 
 //======research Product=======//
-
 let inputProduct = document.querySelector('#searchbar');
 inputProduct.addEventListener('input', searchName);
 function searchName(){
@@ -106,6 +105,7 @@ function searchName(){
         };
     };
 };
+
 
 //=======deply button=====//
 let img = document.getElementById('imgCateg')

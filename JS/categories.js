@@ -40,7 +40,6 @@ let tbody_Category = document.createElement('tbody');
 let table_category = document.querySelector('table');
 function addcardcategry(){
     tbody_Category.innerHTML = '';
-    // tbody_Category  = document.createElement('tbody');
     for(categ of deta_Category){
         let trCategory = document.createElement('tr');
         let tdCategory1 = document.createElement('td');

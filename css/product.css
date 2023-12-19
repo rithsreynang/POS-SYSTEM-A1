@@ -254,6 +254,12 @@ th, td {
     border: 1px solid #ccc;
     padding: 8px;
 }
+.th{
+    color: red;
+}
+th{
+    background-color: rgba(255, 180, 41, 0.925);
+}
 .btn {
     background-color: #4CAF50;
     border: none;
