@@ -62,7 +62,7 @@ function cardProduct(){
         let tdProduct4 = document.createElement('td');
         let deleteProduct = document.createElement('img');
         deleteProduct.style.width = '20px';
-        deleteProduct.src="../Images/delete.jpg";
+        deleteProduct.src="../Images/delete.png";
         tdProduct4.appendChild(deleteProduct);
         deleteProduct.addEventListener('click',delete_Product);
             
@@ -216,7 +216,7 @@ function addcardcategry(){
         let tdCategory4 = document.createElement('td');
         let Cate = document.createElement('img');
         Cate.style.width = '20px';
-        Cate.src="../Images/delete.jpg";
+        Cate.src="../Images/delete.png";
         Cate.addEventListener('click',chick_category) 
         tdCategory4.appendChild(Cate);
 
