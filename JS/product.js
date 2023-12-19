@@ -1,4 +1,4 @@
-
+sum = 0 ;
 let deta_Product = [];
 function saveStorage() {
     localStorage.setItem('deta_Product', JSON.stringify(deta_Product));
@@ -46,18 +46,27 @@ function cardProduct(){
         let tdProduct3 = document.createElement('td');
         tdProduct3.textContent = addCard.print;
 
-
         let tdProduct5 = document.createElement('td')
         let imgAdd = document.createElement('img');
         imgAdd.style.width = '25px';
         imgAdd.src = "../Images/add.png";
+        imgAdd.addEventListener('click', function(){
+            sum+=1;
+            tdProduct3.textContent=sum;
+        });
+
         tdProduct5.appendChild(imgAdd);
         let tdProduct6 = document.createElement('td');
         let imgRemovr = document.createElement('img');
         imgRemovr.style.width = '20px';
         imgRemovr.src = "../Images/remove.png";
+        imgRemovr.addEventListener('click', function(){
+            if(sum > 0){
+                sum-=1;
+                tdProduct3.textContent=sum;
+            };
+        });
         tdProduct6.appendChild(imgRemovr);
-
 
         let tdProduct4 = document.createElement('td');
         let deleteProduct = document.createElement('img');
@@ -90,7 +99,6 @@ function delete_Product(e){
         };
     };
 };
-
 
 //======research Product=======//
 let inputProduct = document.querySelector('#searchbar');
