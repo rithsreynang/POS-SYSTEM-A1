@@ -184,3 +184,10 @@ th, td {
     border: 1px solid #ccc;
     padding: 8px;
 }
+#action{
+    width: 85%;
+    height: 6vh;
+    margin-left: 20px;
+    padding-left: 20px;
+    border: none;
+}

@@ -15,11 +15,6 @@ body{
     position: relative;
     width: 100%;
 }
-/* nav{
-    background-color: orange;
-    color: white;
-    padding: 10px;
-} */
 
 .left{
     background: orange;
@@ -94,8 +89,8 @@ body{
     font-size: 30px;
 
 }
-.stor>h4{
-    color: rgb(24, 147, 189);
+.stor > h4{
+    color: white;
     font-size: 20px;
     margin-top: 10px;
     border: 1px solid rgb(147, 145, 145) ;
@@ -104,14 +99,13 @@ body{
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    background-color: orange;
     
 }
 .tables{
-    /* background-color: violet; */
     padding: 20px;
     margin-left: 30px;
-    margin-top: 70px;
-      
+    margin-top: 70px;    
 }
 table{
     width: 100%;
@@ -121,6 +115,11 @@ table,th,td{
     border: 1px solid rgb(107, 106, 106);
     padding: 10px;
 }
+h4:hover{
+    background-color: rgba(248, 231, 211, 0.966);
+    color: orange;
+}
+
 
    
 
