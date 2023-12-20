@@ -19,7 +19,7 @@ Add_Categry.addEventListener('click', createCard);
 function createCard() {
     let uniqesID = localStorage.getItem('id');
     if (uniqesID === null) {
-        uniqesID = 1;
+        uniqesID = 0;
         localStorage.setItem('id', JSON.stringify(uniqesID));
     } else {
         uniqesID = parseInt(uniqesID) + 1;
