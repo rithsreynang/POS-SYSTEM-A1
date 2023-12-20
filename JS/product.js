@@ -252,7 +252,6 @@ function chick_category(e){
     };
 };
 
-
 //======research Category=======//
 let inputCategpry = document.querySelector('#search-Categry');
 inputCategpry.addEventListener('input', searchNameCategory);

@@ -15,11 +15,6 @@ body{
     position: relative;
     width: 100%;
 }
-/* nav{
-    background-color: orange;
-    color: white;
-    padding: 10px;
-} */
 
 .left{
     background: orange;
@@ -94,7 +89,7 @@ body{
     font-size: 30px;
 
 }
-.stor>h4{
+.stor > h4{
     color: white;
     font-size: 20px;
     margin-top: 10px;
@@ -108,11 +103,9 @@ body{
     
 }
 .tables{
-    /* background-color: violet; */
     padding: 20px;
     margin-left: 30px;
-    margin-top: 70px;
-      
+    margin-top: 70px;    
 }
 table{
     width: 100%;
@@ -123,8 +116,8 @@ table,th,td{
     padding: 10px;
 }
 h4:hover{
-    background-color: orange;
-    color: white;
+    background-color: rgba(248, 231, 211, 0.966);
+    color: orange;
 }
 
 
