@@ -1,4 +1,3 @@
-sum = 0 ;
 let deta_Product = [];
 function saveStorage() {
     localStorage.setItem('deta_Product', JSON.stringify(deta_Product));
@@ -10,6 +9,7 @@ function getStorage() {
         cardProduct();
     };
 };
+sum = 0 ;
 
 let text_name = document.getElementById('textName');
 let input_Number = document.getElementById('input-Number');
@@ -252,8 +252,8 @@ function chick_category(e){
     };
 };
 
-//======research Category=======//
 
+//======research Category=======//
 let inputCategpry = document.querySelector('#search-Categry');
 inputCategpry.addEventListener('input', searchNameCategory);
 function searchNameCategory(){
@@ -269,4 +269,3 @@ function searchNameCategory(){
 
 get();
 getStorage();
-
