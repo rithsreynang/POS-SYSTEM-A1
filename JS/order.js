@@ -1,6 +1,6 @@
 let fruit = [
     { img: '../img/image.jpg', id: '001', name: 'Apple', stock: 30, price: 2.5 },
-    { img: '../img/image.jpg', id: '002', name: 'Coconut', stock: 25, price: 1  },
+    { img: '../img/image.jpg', id: '002', name: 'Coconut', stock: 25, price: 1 },
     { img: '../img/image.jpg', id: '003', name: 'Banana', stock: 15, price: 1.5 },
     { img: '../img/image.jpg', id: '004', name: 'Mago', stock: 20, price: 2 },
     { img: '../img/image.jpg', id: '005', name: 'Papaya', stock: 10, price: 0.75 },
@@ -26,7 +26,7 @@ let drink = [
     { img: '../img/image.jpg', id: '024', name: 'Tea', stock: 20, price: 2 },
     { img: '../img/image.jpg', id: '025', name: 'Coca-Cola', stock: 10, price: 0.75 },
     { img: '../img/image.jpg', id: '026', name: 'Fruit Juice', stock: 80, price: 1.50 },
- 
+
 ]
 let cosmetic = [
     { img: '../img/image.jpg', id: '031', name: 'Sun cream', stock: 30, price: 2.5 },
@@ -38,7 +38,8 @@ let cosmetic = [
     { img: '../img/image.jpg', id: '037', name: 'Night Cream', stock: 38, price: 1.50 },
 ]
 const cart = []
-let total = 0
+let total = 0;
+number = 0;
 
 function saveToLocal() {
     localStorage.setItem('fruit', JSON.stringify(fruit));
@@ -60,11 +61,11 @@ let group_Card = document.getElementById('group-card');
 function displayCardProduct_fruit() {
     load()
     group_Card.innerHTML = ''
-    
+
     for (let i in fruit) {
         let card = document.createElement('div');
         card.classList = 'card';
-        card.dataset.index=i
+        card.dataset.index = i
 
 
         let image = document.createElement('img');
@@ -80,12 +81,12 @@ function displayCardProduct_fruit() {
         stock_product.textContent = 'stock of product : ' + fruit[i].stock;
 
         let price_product = document.createElement('h3');
-        price_product.textContent = 'price: $' +fruit[i].price;
+        price_product.textContent = 'price: $' + fruit[i].price;
 
         let btn = document.createElement('button');
         btn.setAttribute('id', 'submits')
         btn.textContent = '+ Add to cart';
-        btn.addEventListener('click',add_cart)
+        btn.addEventListener('click', add_carts)
 
 
         card.appendChild(image);
@@ -105,28 +106,28 @@ function displayCardProduct_cake() {
     for (let i in cake) {
         let card = document.createElement('div');
         card.classList.add = 'card';
-        card.dataset.index=i
+        card.dataset.index = i
 
-        
+
         let image = document.createElement('img');
-        image.src = product.img;
+        image.src = cake[i].img;
 
         let id_product = document.createElement('h3');
         id_product.textContent = 'ID ' + cake[i].id;
 
         let name_product = document.createElement('h3');
-        name_product.textContent = 'name ' +cake[i].name;
+        name_product.textContent = 'name ' + cake[i].name;
 
         let stock_product = document.createElement('h3');
         stock_product.textContent = 'stock of product ' + cake[i].stock;
 
         let price_product = document.createElement('h3');
-        price_product.textContent ='price: $' + cake[i].price;
+        price_product.textContent = 'price: $' + cake[i].price;
 
         let btn = document.createElement('button');
         btn.setAttribute('id', 'submits')
         btn.textContent = '+ Add to cart';
-        btn.addEventListener('click',add_cart)
+        btn.addEventListener('click', add_carts)
 
 
         card.appendChild(image);
@@ -144,14 +145,14 @@ function displayCardProduct_drink() {
     load()
     group_Card.innerHTML = ''
 
-    for (let i in  drink) {
+    for (let i in drink) {
         let card = document.createElement('div');
         card.classList = 'card';
-        card.dataset.index=i
+        card.dataset.index = i
 
 
         let image = document.createElement('img');
-        image.src = product.img;
+        image.src = drink[i].img;
 
         let id_product = document.createElement('h3');
         id_product.textContent = 'ID ' + drink[i].id;
@@ -168,6 +169,7 @@ function displayCardProduct_drink() {
         let btn = document.createElement('button');
         btn.setAttribute('id', 'submits')
         btn.textContent = '+ Add to cart';
+        btn.addEventListener('click', add_carts)
 
         card.appendChild(image);
         card.appendChild(id_product);
@@ -185,11 +187,11 @@ function displayCardProduct_cosmetic() {
     for (let i in cosmetic) {
         let card = document.createElement('div');
         card.classList = 'card';
-        card.dataset.index=i
+        card.dataset.index = i
 
 
         let image = document.createElement('img');
-        image.src = product.img;
+        image.src = cosmetic[i].img;
 
         let id_product = document.createElement('h3');
         id_product.textContent = 'ID ' + cosmetic[i].id;
@@ -206,7 +208,7 @@ function displayCardProduct_cosmetic() {
         let btn = document.createElement('button');
         btn.setAttribute('id', 'submits')
         btn.textContent = '+ Add to cart';
-        btn.addEventListener('click',add_cart)
+        btn.addEventListener('click', add_carts)
 
         card.appendChild(image);
         card.appendChild(id_product);
@@ -228,41 +230,139 @@ let cosmetics = document.getElementById('cosmetics');
 
 // Add event listener to the 'Fruits' button
 
-fruits.addEventListener('click', function(){
+fruits.addEventListener('click', function () {
     displayCardProduct_fruit();
 });
 
 // Add event listener to the 'Cakes' button
-cakes.addEventListener('click', function() {
+cakes.addEventListener('click', function () {
     displayCardProduct_cake();
 });
 
 // Add event listener to the 'Drinks' button
-drinks.addEventListener('click', function() {
+drinks.addEventListener('click', function () {
     displayCardProduct_drink();
 });
 
 // Add event listener to the 'Cosmetics' button
-cosmetics.addEventListener('click', function() {
+cosmetics.addEventListener('click', function () {
+
     displayCardProduct_cosmetic();
 });
 
 displayCardProduct_fruit();
 
 // ===================================Search_input======================================
-let search_input=document.getElementById('search_input').value;
+let search_input = document.getElementById('search_input').value;
 console.log(search_input);
 
 
 
 
 // ================================Add_tocart============================================
-function add_cart(event){
-    const index = event.target.parentElement.dataset.index
-    cart.push(fruit[index]);
-    total += fruit[index].price
+let cart_container = document.querySelector('.main-right')
+// let groupCarts = document.querySelector('#add_cart')
+function add_carts(e) {
+    let pc = e.target.parentElement.dataset.index
+    const isExist = cart.filter(item => item.id === fruit[pc].id)
+    if(!isExist.length){
+        cart.push(fruit[pc])
+    }
     localStorage.setItem('cart', JSON.stringify(cart))
-    console.log(total);
-    
+    displayCart()
 
 }
+
+
+function minus_Product(e) {
+    let p = e.target.parentElement.parentElement.parentElement.children[0].textContent;
+    if (number > 0) {
+        number -= 1;
+        document.getElementById('p' + p).textContent = number;
+        console.log(document.getElementById('h3' + p).textContent = pricepc);
+    } else if (number <= 0) {
+        number = 0;
+    }
+}
+function plus_Product(e) {
+    let pn = e.target.parentElement.parentElement.parentElement.children[0].textContent;
+    number += 1
+
+    document.getElementById('p' + pn).textContent = number;
+    document.getElementById('h3' + pn).textContent = pricepc;
+}
+function displayCart() {
+    let groupCarts = document.querySelector('#add_cart')
+    groupCarts.remove()
+    const cartList = document.createElement('div')
+    cartList.setAttribute('id',"add_cart") 
+    const carts = JSON.parse(localStorage.getItem('cart'))
+    if(!carts.length){
+        for (let i in carts) {
+            let image = cart[i].img;
+            let namepc = cart[i].name;
+            let pricepc = cart[i].price;
+    
+    
+            let carts = document.createElement('div');
+            carts.setAttribute('id', 'carts');
+            carts.dataset.index = i
+    
+    
+            let img = document.createElement('img');
+            img.src = image;
+            carts.appendChild(img)
+    
+            let cart_right = document.createElement('div');
+            cart_right.classList = 'cart_right';
+            carts.appendChild(cart_right)
+    
+    
+            let name = document.createElement('h3');
+            name.textContent = namepc;
+            cart_right.appendChild(name);
+    
+    
+            let prices_product = document.createElement('div');
+            prices_product.classList = "price_product";
+            cart_right.appendChild(prices_product);
+    
+            let price = document.createElement('h3');
+            price.id = 'h3' + namepc;
+            price.textContent = pricepc;
+            prices_product.appendChild(price);
+    
+    
+            let icon = document.createElement('div');
+            icon.classList = 'group-icon';
+            prices_product.appendChild(icon);
+    
+            let button_minus = document.createElement('button');
+            button_minus.id = 'minus';
+            button_minus.textContent = "-";
+    
+            icon.appendChild(button_minus);
+            button_minus.addEventListener('click', minus_Product)
+    
+    
+    
+            let numbers = document.createElement('p');
+            numbers.id = 'p' + namepc;
+            numbers.textContent = number;
+            icon.appendChild(numbers);
+    
+            let button_plus = document.createElement('button');
+            button_plus.id = 'plus';
+            button_plus.textContent = "+";
+            icon.appendChild(button_plus);
+            button_plus.addEventListener('click', plus_Product)
+    
+            let icondelete = document.createElement('i');
+            icondelete.classList = 'bx bx-x'
+            cartList.append(carts)
+        }
+        cart_container.insertBefore(cartList, cart_container.children[1])
+    }
+}
+displayCart()
+// =============================Total==================================================

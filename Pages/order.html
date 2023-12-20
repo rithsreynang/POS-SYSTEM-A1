@@ -1,134 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
     <link rel="stylesheet" href="../css/order.css">
 </head>
+
 <body>
     <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-<body>
-    <!-- =============Navigation========== -->
-    <div class="container">
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="">
-                        <span class="icon">
-                            <ion-icon name="menu"></ion-icon>
-                        </span>
-                        <h3 class="title">JoJo Mart</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="/dashboard.html">
-                        <span class="icon">
-                            <ion-icon name="grid-outline"></ion-icon>
-                        </span>
-                        <span class="title">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/Pages/product.html">
-                        <span class="icon">
-                            <ion-icon name="cart-outline"></ion-icon>
-                        </span>
-                        <span class="title">Products</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/Pages/categories.html">
-                        <span class="icon">
-                            <ion-icon name="apps-outline"></ion-icon>
-                        </span>
-                        <span class="title">Categorie</span>
-                    </a>
-                </li>
+    </head>
 
-                <li>
-                    <a href="/Pages/order.html">
-                        <span class="icon">
-                            <ion-icon name="cart-outline"></ion-icon>
-                        </span>
-                        <span class="title">Order</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- ======================main=========================== -->
-        <div class="main">
-            <div class="main-left">
-                <div class="main-top">
-                    <h2>Welcome pos system</h2>
-                    <form action="">
-                        <input type="search" name="search" id="search_input" placeholder="search product...">
-                        <button id="submit">search</button>
-                    </form>
-    
-                 </div>
-                <div class="category">
-                    <button id="fruits">Fruits</button>
-                    <button id="cakes">Cakes</button>
-                    <button id="drinks">Drinks</button>
-                    <button id="cosmetics">Cosmetics</button>
-                </div>
-                <div id="group-card">
-                   
-    
-                </div>  
+    <body>
+        <!-- =============Navigation========== -->
+        <div class="container">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="menu"></ion-icon>
+                            </span>
+                            <h3 class="title">JoJo Mart</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dashboard.html">
+                            <span class="icon">
+                                <ion-icon name="grid-outline"></ion-icon>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Pages/product.html">
+                            <span class="icon">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </span>
+                            <span class="title">Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Pages/categories.html">
+                            <span class="icon">
+                                <ion-icon name="apps-outline"></ion-icon>
+                            </span>
+                            <span class="title">Categorie</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/Pages/order.html">
+                            <span class="icon">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </span>
+                            <span class="title">Order</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="main-right">
-                <div class="main_right_title">
-                    <h2>Current Order! </h2>
-                </div>
-                <div id="add_cart">
-                    <div id="carts">
+            <!-- ======================main=========================== -->
+            <div class="main">
+                <div class="main-left">
+                    <div class="main-top">
+                        <h2>Welcome pos system</h2>
+                        <form action="">
+                            <input type="search" name="search" id="search_input" placeholder="search product...">
+                            <button id="submit">search</button>
+                        </form>
 
+                    </div>
+                    <div class="category">
+                        <button id="fruits">Fruits</button>
+                        <button id="cakes">Cakes</button>
+                        <button id="drinks">Drinks</button>
+                        <button id="cosmetics">Cosmetics</button>
+                    </div>
+                    <div id="group-card">
+
+
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="main_right_title">
+                        <h2>Current Order! </h2>
+                    </div>
+                    <div id="add_cart">
+                        <!-- <div id="carts">
                         <img src="../img/image.jpg" alt="">
                         <div class="cart_right">
-    
                             <h3>Name product: apple</h3>
                             <div class="price_product">
                                 <h3>$45</h3>
                                 <div class="group-icon">
-                                    <p>-</p>
+                                    <button id="minus">-</button>
                                     <p>0</p>
-                                    <p>+</p>
+                                    <button id ="plus">+</button>
                                 </div>
                             </div>
+                        </div> -->
+                    </div>
+                    <!-- </div> -->
+                    <div class="main_total">
+                        <p>---------------------------------------------------------------</p>
+                        <div class="tatal">
+                            <h3>Total :</h3>
+                            <h3>
+
+                            </h3>
                         </div>
-                    </div>
-                </div>
-                <div class="main_total">
-                    <p>---------------------------------------------------------------</p>
-                    <div class="tatal">
-                        <h3>Total :</h3>
-                        <h3>
-    
-                        </h3>
-                    </div>
 
+                    </div>
                 </div>
+
             </div>
-
         </div>
-    </div>
-</body>
-<script src="../JS/order.js" defer></script>
-<!-- ====icon icons=== -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    <script src="../JS/order.js" defer></script>
+    <!-- ====icon icons=== -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-</html>
+    </html>
 </body>
+
 </html>

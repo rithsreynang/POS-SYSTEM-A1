@@ -9,35 +9,30 @@ body{
     min-height: 100vh;
     overflow: hidden;
     border-top: 2px solid orange;
-}
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    background: rgb(165, 136, 101);
+    
 }
 .container{
     display: flex;
-    
-    
+    background: #000;
+   
 }
+/* .main{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(123, 72, 9);
+} */
 
-.contan{
-    flex: 0.4;
-    position: relative;
-    width: 100%;
-}
+
 .navigation{
-    position: fixed;
-    width: 200px;
-    /* height: 100%; */
+    flex: 0.8;
     background: orange;
     transition: 0.5s;
     overflow: hidden;
 }
 .navigation ul{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -94,7 +89,7 @@ main{
 /* =======================display_product========================== */
 .main{
     flex: 4;
-    margin-left: 13%;
+    margin-left: -13%;
     display: flex;
   
 }
@@ -204,7 +199,7 @@ h3{
     
 }
 .main_total{
-    margin-top: 145%;
+    margin-top: 30%;
 }
 .total{
     display:flex ;
@@ -234,17 +229,28 @@ h3{
 
 }
 .price_product{
+    
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    
 }
 .group-icon{
     font-weight: bold;
+    font-size: 20px;
     flex: 1;
     display: flex;
     gap: 20px;
+    padding-left: 70px;
     justify-content: flex-end;
     margin-top: 6px;
+   
+}
+#minus,#plus{
+    background: orange;
+    border: none;
+    font-size: 20px;
 }
 
 
+32
