@@ -8,21 +8,18 @@
 body{
     min-height: 100vh;
     overflow: hidden;
-    border-top: 2px solid orange;
+    border-bottom: 1px solid orange;
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
-    background: rgb(165, 136, 101);
+    background: bisque;
 }
 .container{
     display: flex;
-    
-    
 }
-
 .contan{
     flex: 0.4;
     position: relative;
@@ -31,7 +28,7 @@ main{
 .navigation{
     position: fixed;
     width: 200px;
-    /* height: 100%; */
+    height: 100%;
     background: orange;
     transition: 0.5s;
     overflow: hidden;
@@ -46,7 +43,6 @@ main{
     position: relative;
     width: 100%;
     list-style: none;
-    
 }
 .navigation ul li:hover{
     background: white;
@@ -54,10 +50,6 @@ main{
 .navigation ul li:nth-child(1){
     margin-bottom: 40px;
     pointer-events: none;
-    
-}
-.navigation ul li h3{
-    margin: -8px;
 }
 .navigation ul li a{
     position: relative;
@@ -91,6 +83,8 @@ main{
     text-align: start;
     white-space: nowrap;
 }
+
+
 /* =======================display_product========================== */
 .main{
     flex: 4;
@@ -200,11 +194,12 @@ h3{
     padding: 20px;
     display: flex;
     flex-direction: column;
+    
     /* justify-content: space-between; */
     
 }
 .main_total{
-    margin-top: 145%;
+    margin-top: 10px;
 }
 .total{
     display:flex ;
@@ -213,6 +208,17 @@ h3{
 }
 
 /* ===========================Add_pruduct_Tocart============================= */
+#add_cart{
+      
+    overflow-y:scroll ;
+    height: 70vh;
+    margin: 30px;
+    width: 95%;
+    
+
+}
+
+
 #carts{
     display: flex;
     background: orange;
@@ -242,9 +248,12 @@ h3{
     font-weight: bold;
     flex: 1;
     display: flex;
-    gap: 20px;
-    justify-content: flex-end;
+    gap: 10px;
+    margin-left: 30px;
     margin-top: 6px;
 }
-
+#minus,#plus{
+    background: orange;
+    border: none;
+}
 
